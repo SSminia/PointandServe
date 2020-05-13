@@ -23,6 +23,9 @@
 4. Once the robot is within a very close distance of the goal, it will rotate again, to match itself with the goal orientation by comparing itself to it. 
 5. Idle until a new goal is given.
 
+#### Ros nodes
+The node is named sadness. As the nodes and topics which are needed for the coed do not change between Servoing and point and shoot there is one graph. you can see that the odometry is read and the velocity is sent out.
+
 ### 2 - Results
 
 #### Point&Shoot
