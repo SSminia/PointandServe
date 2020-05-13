@@ -39,6 +39,7 @@ For the point and shoot, we found that we had to reduce the speed of the robot. 
 The robot will also jitter when finding the correct orientation while pointing at the goal and while adjusting its orientation to the goal, this is caused by the logic implemented and the threshold values we have used to make sure the orientation is as accruate as it could be. It doesn't cause the robot to stay stuck in the state, but it can take a few seconds to adjust.
 
 #### Servoing
+For servoing there are a few current issues. The velocity is too high when needing to make a large rotation resulting in more distance to travel. more space and longer travel time. The part of the code that sets which direction to rotate doesn't always rotate in th emost efficient direction. Currently there are a few edge cases in which the robot switches between its rotation direction when driving towards the nav goal. This results in an infinite loop in which the robot tries to rotate but is never aligning itself. Increasing the angular velocity seems to have fixed this edge case but its not known for certain if its completely gone. Another issue is that the end rotation can increase the distance between the robot origin and the nav goal. upon reacvhing the nav goal the robot jitters trying to align itself perfectly.
 
 ### 4 - Videos
 
