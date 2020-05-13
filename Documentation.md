@@ -26,7 +26,7 @@
 #### Ros nodes
 The node is named sadness. As the nodes and topics which are needed for the coed do not change between Servoing and point and shoot there is one graph. you can see that the odometry is read and the velocity is sent out.
 
-! [Rosnodes] (https://raw.githubusercontent.com/SSminia/PointandServe/master/point_nodes.png)
+![Rosnodes](https://raw.githubusercontent.com/SSminia/PointandServe/master/point_nodes.png)
 
 ### 2 - Results
 
