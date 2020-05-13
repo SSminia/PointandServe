@@ -25,7 +25,7 @@
 
 ### 2 - Results
 
-#### point&Shoot
+#### Point&Shoot
 The robot follows the logic described herebove.By following these steps the robot gets to the end goal. The angular velocity is not regulated, as such the robot appears to be twitching when trying to align itself in the right angle. This causes the robot to sometimes have to attempt multiple tries at rotating before it aligns itself. The same issue persists for the end rotation. Also the rotation direction is not always the shortest. Lineair traveling works only the velocity had to be lowered as the robots orientation can drift if its set to high. Ending the navigation and awaiting a new goal works.
 
 #### Servoing
@@ -36,7 +36,9 @@ Sevroing alows the robot to both drive at an angular velocity and a lineair velo
 #### Point&Shoot
 For the point and shoot, we found that we had to reduce the speed of the robot. If the speed were to be increased the robot would slip. Slipping causes a magnitude of issues, as it would for instance, have the robot miss its goal completely, causing it to endlessly miss the goal. 
 
-The robot will also jitter when finding the correct orientation while pointing at the goal and while adjusting its orientation to the goal, this is caused by the logic implemented and the threshold values we have used to make sure the orientation is as accruate as it could be. It doesn't cause the robot to stay stuck in the state, but it can take a few seconds to adjust. 
+The robot will also jitter when finding the correct orientation while pointing at the goal and while adjusting its orientation to the goal, this is caused by the logic implemented and the threshold values we have used to make sure the orientation is as accruate as it could be. It doesn't cause the robot to stay stuck in the state, but it can take a few seconds to adjust.
+
+#### Servoing
 
 ### 4 - Videos
 
