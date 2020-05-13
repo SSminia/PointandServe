@@ -25,6 +25,11 @@
 
 ### 2 - Results
 
+#### point&Shoot
+The robot follows the logic described herebove.By following these steps the robot gets to the end goal. The angular velocity is not regulated, as such the robot appears to be twitching when trying to align itself in the right angle. This causes the robot to sometimes have to attempt multiple tries at rotating before it aligns itself. The same issue persists for the end rotation. Also the rotation direction is not always the shortest. Lineair traveling works only the velocity had to be lowered as the robots orientation can drift if its set to high. Ending the navigation and awaiting a new goal works.
+
+#### Servoing
+Sevroing alows the robot to both drive at an angular velocity and a lineair velocity at the same time. As per video evidence this works in our simulation. During servoing both the angular and lilneair velocity are scaled to their difference to their target. What was noticed in this approach is that if a large rotation had to be made, the robot needed a large space to perform its actions as it would be driving at max velocity during the whole rotation. The rotation direction was not always the most efficient. This causes a lot more surface area needed for the robot to navigate. The robot slows dont enough to get to the nav point within threshold. After this robot rotates toward the goal angle. While any actions are performed the robot can be given a new goal and will update its navigation accordingly.
  
 ### 3 - Limitations
 
