@@ -16,15 +16,22 @@
 8. Rotate until current orientation matches goal orientation
 9. End operation and await new goal
 
+#### Servoing
+1. Determine distance and angle towards goal
+2. Accelerate given a formula, given a set number multiplied by the distance away from the goal and a small addition to prevent slowdown of robot
+3. Adjust angular velocity of the robot, by a set number, depending on the difference between robot orientation and the goal
+4. Once the robot is within a very close distance of the goal, it will rotate again, to match itself with the goal orientation by comparing itself to it. 
+5. Idle until a new goal is given
+
 ### 2 - Results
 
-#### point&Shoot
-The robot follows the logic described herebove.By following these steps the robot gets to the end goal. The angular velocity is not regulated, as such the robot appears to be twitching when trying to align itself in the right angle. This causes the robot to sometimes have to attempt multiple tries at rotating before it aligns itself. The same issue persists for the end rotation. The lineair movement stops only is the distance is within a certain bounds. This means  
+ 
+### 3 - Limitations / errors
+
+### 4 - Videos
+
+#### Point&Shoot
+https://www.dropbox.com/s/bojkjsl3wfkhi2r/Point%26Shoot.mp4?dl=0
 
 #### Servoing
-
- 
-### 3 - Limitations / Errors
-
-### 4 - Video
-
+https://www.dropbox.com/s/6g3ch67zjptvth0/Servoing.mp4?dl=0
