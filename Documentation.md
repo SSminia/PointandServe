@@ -26,7 +26,12 @@
 ### 2 - Results
 
  
-### 3 - Limitations / errors
+### 3 - Limitations
+
+#### Point&Shoot
+For the point and shoot, we found that we had to reduce the speed of the robot. If the speed were to be increased the robot would slip. Slipping causes a magnitude of issues, as it would for instance, have the robot miss its goal completely, causing it to endlessly miss the goal. 
+
+The robot will also jitter when finding the correct orientation while pointing at the goal and while adjusting its orientation to the goal, this is caused by the logic implemented and the threshold values we have used to make sure the orientation is as accruate as it could be. It doesn't cause the robot to stay stuck in the state, but it can take a few seconds to adjust. 
 
 ### 4 - Videos
 
